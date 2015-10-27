@@ -102,7 +102,9 @@ void WS2811Driver::end()
  */
 void WS2811Driver::show(void){
 	disableWatchDog();
-#if F_CPU == 16000000L
+#if F_CPU == 8000000L
+    write_ws2811_hs_8(pixels, _led_cnt * 3, _pin_mask, _port_mask);
+#elif F_CPU == 16000000L
     write_ws2811_hs_16(pixels, _led_cnt * 3, _pin_mask, _port_mask);
 #elif F_CPU == 25000000L
 	write_ws2811_hs_25(pixels, _led_cnt * 3, _pin_mask, _port_mask);
