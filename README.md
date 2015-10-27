@@ -5,3 +5,7 @@ WS2811 Driver for MSP430 Launchpads
 2. Copy contents of Zip to Energia library folder (typically C:\Users\[username]\Documents\Energia\libraries\)
 3. Remove "-master" from fodler name
 4. Open Energia, if successfull, the strip_test example will appear in the Energia examples menu under WS2811Driver
+
+------------------------
+
+10-27-2015 - www.therandomlab.com - David Sanz Kirbis, added support for for 8MHz clock
