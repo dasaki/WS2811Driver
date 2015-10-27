@@ -36,6 +36,7 @@
 #include "ws2811.h"
 
 //Assembly call to strip update function
+extern "C" void write_ws2811_hs_8(const uint8_t *data, uint16_t length, uint8_t pinmask, uint16_t portmask);
 extern "C" void write_ws2811_hs_16(const uint8_t *data, uint16_t length, uint8_t pinmask, uint16_t portmask);
 extern "C" void write_ws2811_hs_25(const uint8_t *data, uint16_t length, uint8_t pinmask, uint16_t portmask);
 
